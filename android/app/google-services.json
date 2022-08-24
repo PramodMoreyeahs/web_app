@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "191560869825",
+    "firebase_url": "https://bikegarage-5b538-default-rtdb.firebaseio.com",
+    "project_id": "bikegarage-5b538",
+    "storage_bucket": "bikegarage-5b538.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191560869825:android:beba20bbd408f77f74b140",
+        "android_client_info": {
+          "package_name": "com.example.bikegarage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191560869825-mgj5jg7u18glf06r3jc2lfbfeq42j0jq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3CUayJZ9XXxFfeGcPJ7Xwr7Z5tzqZpdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191560869825-mgj5jg7u18glf06r3jc2lfbfeq42j0jq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191560869825:android:b546ba8aec73cf5074b140",
+        "android_client_info": {
+          "package_name": "com.example.yuviauto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191560869825-2lbn4n5i9v97bij4idkorf5gp272k8vc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yuviauto",
+            "certificate_hash": "2f94332af37e5589b89430429bd27f1568645172"
+          }
+        },
+        {
+          "client_id": "191560869825-mgj5jg7u18glf06r3jc2lfbfeq42j0jq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3CUayJZ9XXxFfeGcPJ7Xwr7Z5tzqZpdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191560869825-mgj5jg7u18glf06r3jc2lfbfeq42j0jq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
