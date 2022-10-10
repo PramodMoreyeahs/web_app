@@ -15,6 +15,7 @@ class HomeView extends StatefulWidget {
 
 class _HomeViewState extends State<HomeView> {
   final List<ItemData> loadedProfile = [];
+  List<Widget> listData=[];
 
   @override
   void initState() {
@@ -26,14 +27,13 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: CenterView(
+      body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children:  [
-            NavigationBarHome(),
             SizedBox(height: 20,),
-            Container(
+         /*   Container(
               height: 300,
               child: GridView.builder(
                 itemCount: loadedProfile.length,
@@ -41,7 +41,21 @@ class _HomeViewState extends State<HomeView> {
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   childAspectRatio: 2,
+                  mainAxisSpacing: 10.0
                 ),
+              ),
+            ),*/
+            Container(
+              margin: EdgeInsets.all(10.0),
+              child: Wrap(
+                spacing:15.0,
+                alignment: WrapAlignment.center,
+                runSpacing: 15.0,
+                textDirection: TextDirection.rtl,
+
+                children: [
+                  ...listData
+                ],
               ),
             )
 
@@ -72,10 +86,13 @@ class _HomeViewState extends State<HomeView> {
         ),
       );
     });
+
+    for(var i in loadedProfile){
+      listData.add(HomeListTile(i));
+    }
     setState(() {
 
     });
-
     print("DataClass *** ${loadedProfile[0].bikeName}");
   }
 }
